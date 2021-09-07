@@ -26,8 +26,7 @@
 .#{$imagenpertada}{
 
 	width: 100%;
-	padding: 0.2rem;
-	margin: 0.2rem;
+	
 	
 }
 
@@ -55,11 +54,20 @@ box-shadow: 0px 0px 20px 0px;
 
 	}
 	
-	.descripcion{
-transform: translate(10%,-50px) ;
-background-color: white;
+.descripcion{
+transform: translate(20%,-35%) ;
+background-color: black;
+opacity: 0.90;
 width: 80%;
 height: 10rem;
 border-radius: 20px 0px 20px 0px;
+		h3{
+				color: rgb(228, 193, 80);
+			text-align: center;
+		}
+		p{
+			color: white;
+				padding: 0px 15px 0px 15px;
+		}
 
-	}
+}
