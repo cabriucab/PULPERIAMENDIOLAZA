@@ -1,0 +1,102 @@
+//VARIABLES
+
+$colorprimario: rgb(255,255,255);
+$colorSecundario: rgb(000,000,000);
+$colorTerciario: rgb(95, 6, 6);
+$sombreado: 0rem 0rem 2rem 0rem;
+$fuenteTitulos:Arial, Helvetica, sans-serif;
+$tamañoTitulos:7rem;
+
+
+
+//ESTILOS GENERALES
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+
+
+body {
+	font-size: 1.6rem;
+	background-image: linear-gradient(to right,$colorprimario,hsl(51, 74%, 64%));
+}
+.pie {
+	width: 100%;
+}
+
+h1, h2, h3, h4{
+	
+	color: $colorTerciario;
+}
+h1, h2{
+    font-family: 'Jost', sans-serif;
+}
+
+h2{
+font-size: 3rem;
+
+}
+
+
+
+@for $i from 1 through 5{
+
+	.m-#{$i}{
+		
+		margin: $i rem  $i rem  $i rem  $i rem;
+		
+
+	}
+
+}
+
+
+@keyframes desplegar {
+	from {
+		height: 0;
+	}
+	to {
+		height: 100%;
+	}
+}
+
+@-webkit-keyframes zoom {
+from {
+		transform: scale(0);
+ 	}
+	to {
+ 		transform: scale(1);
+ 	}
+ }
+
+ 
+@keyframes zoom {
+	from {
+		transform: scale(0.1);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes aparecer {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes menuSlider {
+	from {
+		
+	}
+	to {
+		
+	}
+}

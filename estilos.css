@@ -1,0 +1,964 @@
+*{
+margin: 0px;
+padding:0px;
+}
+
+html{
+
+    font-size: 62.5%;
+
+}
+
+
+header{
+width: 100%;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+
+
+body{
+    font-size: 1.6rem;
+    /* background-color: white; */
+   background-image: linear-gradient(to right,white,hsl(51, 74%, 64%));
+}
+
+
+.pie{
+    width: 100%;
+
+    }
+
+    footer{
+        border-top: 1px solid;
+        box-shadow: 0rem 0rem 2rem 0rem;
+        padding-bottom: 30px;
+background-color: white;
+    }
+
+
+
+h1{
+
+font-family:  'Jost', sans-serif;
+color: rgb(134, 23, 23);
+
+}
+
+h2{
+color: rgb(134, 23, 23);
+
+
+}
+h3{
+    color: rgb(214, 35, 35);
+
+
+    }
+
+ h4{
+
+    color: rgb(7, 7, 7);
+
+ }
+
+ .carrucelDeImagenes{
+     margin: auto;
+    width: 99%;
+
+
+ }
+
+
+
+
+ /* MENU OPCIONES */
+
+.menuSuperior h1{
+
+display: none;
+
+
+}
+ .menuSuperior{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+box-shadow: 0rem 0rem 2rem 0rem;
+/* margin-bottom: 5rem; */
+ }
+
+.logo{
+
+width: 20%;
+padding-left: 6rem ;
+
+}
+
+.logo img{
+
+    width: 100%;
+
+}
+
+ .menu{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+margin-right: 3rem;
+
+
+ }
+
+ .botonHamburguesa{
+
+align-items: center;
+background-color: white;
+border: 0px;
+height: 40px;
+
+ }
+
+#menu, #menu_btn{
+
+    display: none;
+    position: relative;
+}
+
+ .navegador{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items:center ;
+flex-wrap: wrap;
+
+
+ }
+
+.menu li{
+
+
+color: rgb(255, 255, 255);
+font-size: 2rem;
+color: black;
+
+}
+
+.menu li a {
+   color: rgb(1, 1, 1);
+    text-decoration: none;
+
+}
+
+
+.itemsDeMenu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+
+}
+
+.link {
+
+    position: relative;
+      padding: 1rem;
+    border-radius: 5px;
+}
+
+.link:hover {
+    animation: aparecer 3s;
+    background-color: black;
+
+}
+.link:hover a {
+    color: white;
+}
+
+
+.sub-menu-carta {
+
+    list-style: none;
+    position:absolute;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items:center;
+    width: 250%;
+    background-color: rgb(245, 247, 240);
+    display: none;
+
+}
+
+.sub-link {
+
+    padding: 1rem;
+    color:black;
+}
+
+.sub-menu-carta .sub-link a {
+
+    color:black;
+}
+
+
+.sub-link:hover {
+    animation: aparecer 2s;
+    background-color: black;
+}
+
+.sub-link:hover a {
+    color:white;
+}
+
+.link:hover .sub-menu-carta {
+    animation: aparecer 1s;
+    display: flex;
+}
+
+header{
+
+    animation: aparecer 2s
+}
+
+
+@keyframes aparecer{
+   from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+ .logo {
+
+    animation: bounce;
+   animation-iteration-count:initial;
+    animation-duration: 3s;
+  }
+
+  @keyframes desplegar {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+
+  }
+
+
+
+
+@media (max-width:768px){
+
+
+.menu{
+
+flex-direction: column;
+align-items: center;
+ }
+
+ .navegador{
+
+ flex-direction: column;
+
+}
+
+
+.logo{
+ width: 25%;
+padding: 0px;
+
+ }
+
+.itemsDeMenu{
+ flex-direction: column;
+position: relative;
+
+ }
+
+.sub-menu-carta {
+
+position:absolute;
+flex-direction: column;
+/* animation: aparecer 1s; */
+z-index: 1;
+width: 100%;
+background-color: white;
+}
+
+
+}
+
+
+@media (max-width:550px){
+
+.menu{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+z-index: 1;
+
+}
+    .itemsDeMenu{
+
+        display: none;
+    }
+
+     #menu_btn{
+
+        display: flex;
+
+    }
+
+    #menu:checked ~ .logo, .link{
+    animation: none;
+    }
+    #menu:checked ~ .itemsDeMenu{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 2.5rem;
+        
+        flex-direction: column;
+        position:absolute;
+
+        background-color: white;
+
+    }
+
+    .link:hover .sub-menu-carta {
+        
+        display: none;
+    }
+    
+
+
+}
+
+/* PORTADA PRINCIPAL */
+
+.carrucelDeImagenes{
+    margin-top: 3rem;
+}
+
+
+.superior {
+    background-color: rgb(1, 1, 1);
+
+}
+
+
+
+.fotosConDescripcion{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+flex-wrap: wrap ;
+
+
+}
+
+.imagenportada1{
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 3rem;
+
+
+}
+.imagenportada2{
+    width: 100%;
+    background-color: cornsilk;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 3rem;
+   
+}
+.imagenportada3{
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 3rem;
+    
+}
+.imagenportada4{
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 3rem;
+   
+}
+
+
+.pastas{
+margin-top: 40px;
+background-color:lightyellow;
+box-shadow: 0 0 2rem 0;
+padding: 2rem 2rem ;
+border-radius: 6rem;
+}
+
+.pastas:hover{
+    animation: aparecer 2s;
+    /* transform: scale(1.1,1.1); */
+}
+
+.carnes {
+margin-top: 40px;
+background-color:lightyellow;
+box-shadow: 0 0 2rem 0;
+padding: 2rem 2rem ;
+border-radius: 6rem;
+}
+
+.carnes:hover{
+    animation: aparecer 2s;
+    /* transform: scale(1.1,1.1); */
+}
+
+.pescados{
+margin-top: 40px;
+background-color:lightyellow;
+box-shadow: 0 0 2rem 0;
+padding: 2rem 2rem ;
+border-radius: 6rem;
+}
+
+.pescados:hover{
+    animation: aparecer 2s;
+    /* transform: scale(1.1,1.1); */
+}
+
+.pizzas{
+
+margin-top: 40px;
+background-color:lightyellow;
+box-shadow: 0 0 2rem 0;
+padding: 2rem 2rem ;
+border-radius: 6rem;
+}
+
+.pizzas:hover{
+    animation: aparecer 2s;
+    /* transform: scale(1.1,1.1); */
+}
+
+
+
+
+
+@media (max-width:768px){
+
+    .fotosConDescripcion h3{
+
+text-align: center;
+
+    }
+    .fotosConDescripcion p {
+
+        text-align: center;
+
+    }
+
+
+
+
+}
+
+
+/* SECCION QUIENES SOMOS */
+
+.titulo{
+ margin-top: 3rem;
+width: 100%;
+background-image: url(./img/106684277_677974652933222_8314330202921990463_n.jpg);
+background-size: cover;
+background-position: center center;
+height: 250px;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+}
+
+.tituloQuienesSomos{
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+text-align: center;
+color: white;
+
+}
+
+.quienesSomos{
+padding-top: 1rem;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+    text-align: justify;
+    font-size: 2rem;
+    margin-top: 10rem;
+
+}
+
+.texto1{
+width: 50rem;
+padding: 1rem 3rem 1rem 3rem;
+
+}
+
+
+.sector1{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items:center;
+    margin-bottom: 4rem;
+
+}
+
+.texto2{
+    width: 50rem;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-right: 2rem;
+}
+
+.sector2{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items:center;
+    margin-bottom: 4rem;
+
+}
+
+.texto3{
+    margin-left: 2rem;
+    width: 50rem;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.sector3{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-self: center;
+    align-items:center;
+
+}
+
+.quienesSomos img{
+
+    border-radius: 15px;
+box-shadow: 0rem 0rem 2rem 0rem;
+}
+
+
+
+
+/* SECCION CARTA */
+
+
+
+.tituloNuestraCarta{
+text-align: center;background-image: url(C:\Users\cabri\Documents\CoderHouse\PROYECTO_FINAL\img\106684277_677974652933222_8314330202921990463_n.jpg);
+background-size: cover;
+background-position: center center;
+height: 250px;
+margin-top: 3rem;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+
+}
+
+.tituloNuestraCarta h1{
+font-family:Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+text-align: center;
+color: white;
+
+}
+.seccioncarta{
+
+margin: auto;
+
+}
+
+.nuestraCarta{
+ 
+border-radius: 3px;
+margin: 3rem auto;
+width: 60%;
+
+}
+
+.accordion-item{
+    margin-top: 2rem;
+    border-radius: 40px;
+}
+
+.accordion-button{
+/* margin-top: 2rem; */
+box-shadow: 0 0 20px 0;
+font-family:  'Jost', sans-serif;
+font-size: 2.5rem;
+text-align: center;
+border-radius: 40px;
+
+    
+}
+
+.accordion-button:hover{
+animation: aparecer 2s;
+background-color: black;
+color:white;
+
+}
+
+
+.detalleItemCarta{
+
+text-align: center;
+
+}
+
+.detalleItemCarta h3{
+
+    font-size: 3rem;
+    
+    }
+.detalleItemCarta h4 a{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+text-decoration: none;
+    font-size: 2rem;
+        
+}
+
+
+.detalleItemCarta hr{
+   margin-bottom: 3rem;
+    
+    }
+
+/* SECCION RESERVAS */
+
+.formularioContacto{
+
+    border: 1px solid;
+    box-shadow: 0px 0px 20px 0px;
+    border-radius: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    
+}
+
+.datosDeContacto{
+
+    height: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+        
+        
+}
+    
+.mapa{
+ margin-top: 4rem;
+ }
+
+.iconoWhastapp img{
+width: 4rem;
+} 
+    
+
+/* .reserva{
+
+display: grid;
+grid-template-columns: 1.5fr 2fr;
+margin-top: 3rem;
+
+}
+
+.tituloReserva{
+grid-column: 1/3;
+text-align: center;
+margin-bottom: 8rem;
+
+}
+*/
+
+
+/*
+
+.formularioContacto form div{
+
+padding: 1rem 1rem;
+
+}
+
+.formularioContacto form div input{
+width: 100%;
+box-shadow:0px 0px 10px 0px;
+
+}
+
+.selectorMesa select{
+
+    width: 100%;
+box-shadow:0 0 10px 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+
+}
+
+textarea{
+
+    width: 100%;
+    box-shadow:0 0 10px 0;
+
+}
+
+.formularioContacto .botonFormulario{
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: space-between;
+padding: 0rem 2rem 0rem 2rem;
+
+}
+
+.formularioContacto .botonFormulario input{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+
+}
+
+
+.formularioContacto .botonFormulario input{
+    margin: 1rem;
+    border-radius: 5px;
+}
+*/
+
+/* 
+.ubicacionMaps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+box-shadow: 0px 0px 20px 0px;
+    grid-column: 2/3;
+    margin:auto;
+} */
+
+/* .iconoWhastapp{
+width: 5px; 
+
+} */
+
+
+
+
+
+/* FOOTER */
+
+
+
+footer{
+width: 100%;
+margin-top: 100px;
+display: flex;
+justify-content: center;
+justify-items: stretch;
+
+}
+
+
+.contacto{
+
+padding: 0rem 15rem;
+
+
+}
+
+.horarios{
+    padding: 0rem 15rem;
+
+}
+
+.redesSociales {
+
+    padding: 0rem 15rem;
+
+}
+
+
+
+  .contenedorDeImagenes{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    margin: 3rem;
+    padding: auto;
+
+  }
+
+  .responsive{
+    border-radius: 2rem;
+  }
+  
+  div.img {
+  margin: 2rem;  
+  opacity: 0.75;
+  box-shadow: 0 0 20px 0;
+  
+} 
+
+div.img:hover {
+    opacity: 1;
+}
+
+/* The Image */
+div.img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+   
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Columns*/
+
+@media only screen and (max-width: 700px){
+   
+    
+    .modal-content {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 550px){
+    
+    div.img {
+        margin:0 ;
+        margin-top: 2rem;  
+        width: 100%;
+        
+      } 
+
+    .responsive {
+        width: 100%;
+    }
+} 
+
+Clear Floats
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

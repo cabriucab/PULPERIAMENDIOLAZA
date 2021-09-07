@@ -1,0 +1,107 @@
+
+footer {
+	border-top: 1px solid;
+	box-shadow: $sombreado;
+	padding-bottom: 30px;
+	background-color:$colorprimario;
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items:baseline;
+	
+}
+
+
+
+.footer__contacto {
+ 	margin-top: 2rem;
+	 h3{
+		 color: black;
+	 }
+}
+
+.footer__horarios{
+	
+		h3{
+			color: black;
+		}
+}
+
+
+.footer__redesSociales {
+	
+	padding-right: 2rem;
+	font-size: 3rem;
+	h3{
+		color: black;
+	}
+
+}
+.redesSociales__iconos{
+
+	display: flex;
+	flex-direction: row;
+	align-content:space-around;
+	
+	
+}
+
+
+
+
+$redesSociales: (
+	instagram: #222121,
+facebook:  #222121,
+youtube: #222121,
+whastapp: #222121
+
+// instagram: rgb(241, 30, 189),
+// facebook: rgb(69, 30, 241),
+// youtube:rgb(241, 18, 18),
+// whastapp:rgb(5, 168, 32)
+);
+
+@each $red, $color in $redesSociales{
+
+	.redesSociales__Link--#{$red}{
+
+		margin-left: 1.5rem;
+		color:$color
+
+	}
+
+
+}
+
+@media (max-width:768px) {
+
+footer{
+
+	flex-direction:column;
+align-items: center;
+align-content: space-around;
+
+}
+
+
+.footer__contacto {
+	margin: 1rem auto 1rem auto;
+}
+.footer__horarios {
+	margin: 1rem auto 1rem auto;
+}
+
+.footer__redesSociales {
+	
+	
+	margin: 1rem auto 1rem auto;
+	font-size: 3rem;
+
+}
+
+
+
+
+}

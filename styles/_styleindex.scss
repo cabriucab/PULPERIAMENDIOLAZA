@@ -1,0 +1,63 @@
+.carrucelDeImagenes {
+	margin: auto;
+	width: 99%;
+	margin-top: 3rem;
+}
+
+.sugerenciaSemanal{
+	
+	margin-top: 3rem;
+		text-align: center;
+	
+	
+	}
+
+.fotosConDescripcion {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+@each $imagenpertada in imagenportada1, imagenportada2, imagenportada3, imagenportada4{
+
+.#{$imagenpertada}{
+
+	width: 100%;
+	padding: 0.2rem;
+	margin: 0.2rem;
+	
+}
+
+}
+
+
+@each $sugerencia in pastas, carnes, pizzas, pescados{
+
+	.#{$sugerencia}{
+	
+	margin-top: 40px;
+	margin-bottom: 2rem;
+	padding: 2rem 2rem;
+	
+
+	}
+	
+	}
+	
+
+	.imagen{
+
+width: 90%;
+
+	}
+	
+	.descripcion{
+translate: 30px -30px;
+background-color: white;
+width: 70%;
+border-radius: 20px 0px 20px 0px;
+
+	}
