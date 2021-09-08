@@ -137,8 +137,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: aparecer 2s;
-          animation: aparecer 2s;
+  -webkit-animation: aparecer 1s;
+          animation: aparecer 1s;
 }
 
 .menu__logo {
@@ -396,16 +396,6 @@ header {
 }
 
 @media (max-width: 550px) {
-  header {
-    -webkit-animation: none;
-            animation: none;
-  }
-  .header__menuSuperior {
-    margin-top: 80px;
-    margin-bottom: 3rem;
-    background-color: white;
-    position: fixed;
-  }
   .menuSuperior__menu {
     display: -webkit-box;
     display: -ms-flexbox;

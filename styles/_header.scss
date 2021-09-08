@@ -5,7 +5,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	animation: aparecer 2s;
+	animation: aparecer 1s;
 }
 
 .menu__logo {
@@ -180,20 +180,6 @@ header {
 
 @media (max-width:550px) {
 
-	header{
-animation: none;
-
-	}
-
-.header__menuSuperior{
-	
-margin-top: 80px;
-margin-bottom: 3rem;
-background-color: white;
-position: fixed;
-	
-}
-	
 	
 	.menuSuperior__menu {
 		
