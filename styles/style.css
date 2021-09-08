@@ -396,6 +396,16 @@ header {
 }
 
 @media (max-width: 550px) {
+  header {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .header__menuSuperior {
+    margin-top: 80px;
+    margin-bottom: 3rem;
+    background-color: white;
+    position: fixed;
+  }
   .menuSuperior__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -464,10 +474,10 @@ header {
 .sugerenciaSemanal {
   margin-top: 3rem;
   text-align: center;
+  color: black;
 }
 
 .fotosConDescripcion {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,57 +489,65 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #eeedc0;
+  width: 100%;
 }
 
 .imagenportada1 {
   width: 100%;
+  border-radius: 0px 20px 0px 20px;
 }
 
 .imagenportada2 {
   width: 100%;
+  border-radius: 0px 20px 0px 20px;
 }
 
 .imagenportada3 {
   width: 100%;
+  border-radius: 0px 20px 0px 20px;
 }
 
 .imagenportada4 {
   width: 100%;
+  border-radius: 0px 20px 0px 20px;
 }
 
 .pastas {
   margin-top: 40px;
   margin-bottom: 2rem;
+  margin-right: 1rem;
   padding: 2rem 2rem;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .carnes {
   margin-top: 40px;
   margin-bottom: 2rem;
+  margin-right: 1rem;
   padding: 2rem 2rem;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pizzas {
   margin-top: 40px;
   margin-bottom: 2rem;
+  margin-right: 1rem;
   padding: 2rem 2rem;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pescados {
   margin-top: 40px;
   margin-bottom: 2rem;
+  margin-right: 1rem;
   padding: 2rem 2rem;
-}
-
-.imagen {
-  width: 100%;
-  -webkit-box-shadow: 0px 0px 20px 0px;
-          box-shadow: 0px 0px 20px 0px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .descripcion {
-  -webkit-transform: translate(20%, -35%);
-          transform: translate(20%, -35%);
+  -webkit-transform: translate(40%, -35%);
+          transform: translate(40%, -35%);
   background-color: black;
   opacity: 0.90;
   width: 80%;
@@ -545,6 +563,13 @@ header {
 .descripcion p {
   color: white;
   padding: 0px 15px 0px 15px;
+}
+
+@media (max-width: 550px) {
+  .descripcion {
+    -webkit-transform: translate(18%, -35%);
+            transform: translate(18%, -35%);
+  }
 }
 
 .titulo {

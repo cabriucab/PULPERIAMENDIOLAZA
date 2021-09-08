@@ -180,7 +180,19 @@ header {
 
 @media (max-width:550px) {
 
+	header{
+animation: none;
 
+	}
+
+.header__menuSuperior{
+	
+margin-top: 80px;
+margin-bottom: 3rem;
+background-color: white;
+position: fixed;
+	
+}
 	
 	
 	.menuSuperior__menu {

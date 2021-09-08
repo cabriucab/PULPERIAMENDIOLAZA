@@ -6,19 +6,24 @@
 
 .sugerenciaSemanal{
 	
-	margin-top: 3rem;
+		margin-top: 3rem;
 		text-align: center;
-	
+		color:black;
 	
 	}
 
 .fotosConDescripcion {
-	width: 100%;
+	
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
 	flex-wrap: wrap;
+	background-color: rgb(238, 237, 192);
+	width: 100%;
+
 }
+
+
 
 
 @each $imagenpertada in imagenportada1, imagenportada2, imagenportada3, imagenportada4{
@@ -26,7 +31,7 @@
 .#{$imagenpertada}{
 
 	width: 100%;
-	
+	border-radius: 0px 20px 0px 20px;
 	
 }
 
@@ -39,23 +44,19 @@
 	
 	margin-top: 40px;
 	margin-bottom: 2rem;
+	margin-right: 1rem ;
 	padding: 2rem 2rem;
-	
+	border-radius: 20px 0px 20px 0px;
 
 	}
 	
 	}
 	
 
-	.imagen{
 
-width: 100%;
-box-shadow: 0px 0px 20px 0px;
-
-	}
 	
 .descripcion{
-transform: translate(20%,-35%) ;
+transform: translate(40%,-35%) ;
 background-color: black;
 opacity: 0.90;
 width: 80%;
@@ -69,5 +70,16 @@ border-radius: 20px 0px 20px 0px;
 			color: white;
 				padding: 0px 15px 0px 15px;
 		}
+
+}
+
+@media (max-width:550px) {
+
+
+.descripcion{
+
+	transform: translate(18%,-35%) ;
+
+}
 
 }
