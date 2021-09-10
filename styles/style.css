@@ -29,6 +29,72 @@ h2 {
   font-size: 3rem;
 }
 
+.social-bar {
+  font-size: 16px;
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 100;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.icon-facebook {
+  background: #2E406E;
+}
+
+.icon-twitter {
+  background: #339DC5;
+}
+
+.icon-youtube {
+  background: #E83028;
+}
+
+.icon-instagram {
+  background: #8a3ab9;
+}
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
+
+.copyright {
+  text-align: center;
+  font-size: 10px;
+}
+
 .m-1 {
   margin: 1 rem 1 rem 1 rem 1 rem;
 }
@@ -897,10 +963,10 @@ header {
 
 footer {
   border-top: 1px solid;
-  -webkit-box-shadow: 0rem 0rem 2rem 0rem;
-          box-shadow: 0rem 0rem 2rem 0rem;
+  -webkit-box-shadow: 0px 0px 40px 0px;
+          box-shadow: 0px 0px 40px 0px;
   padding-bottom: 30px;
-  background-color: white;
+  background-color: black;
   width: 100%;
   margin-top: 100px;
   text-align: center;
@@ -919,11 +985,21 @@ footer {
 }
 
 .footer__contacto h3 {
-  color: black;
+  font-size: 2rem;
+  color: white;
+}
+
+.footer__contacto h4 {
+  color: white;
 }
 
 .footer__horarios h3 {
-  color: black;
+  font-size: 2rem;
+  color: white;
+}
+
+.footer__horarios h4 {
+  color: white;
 }
 
 .footer__redesSociales {
@@ -932,7 +1008,12 @@ footer {
 }
 
 .footer__redesSociales h3 {
-  color: black;
+  font-size: 2rem;
+  color: white;
+}
+
+.footer__redesSociales h4 {
+  color: white;
 }
 
 .redesSociales__iconos {
@@ -949,26 +1030,27 @@ footer {
 
 .redesSociales__Link--instagram {
   margin-left: 1.5rem;
-  color: #222121;
+  color: #ffffff;
 }
 
 .redesSociales__Link--facebook {
   margin-left: 1.5rem;
-  color: #222121;
+  color: #ffffff;
 }
 
 .redesSociales__Link--youtube {
   margin-left: 1.5rem;
-  color: #222121;
+  color: #ffffff;
 }
 
 .redesSociales__Link--whastapp {
   margin-left: 1.5rem;
-  color: #222121;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
   footer {
+    padding-bottom: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -980,14 +1062,24 @@ footer {
         align-content: space-around;
   }
   .footer__contacto {
+    text-align: center;
     margin: 1rem auto 1rem auto;
+    border-bottom: dotted white;
+    border-width: 1px;
+    margin-bottom: 10px;
   }
   .footer__horarios {
+    text-align: center;
     margin: 1rem auto 1rem auto;
+    border-bottom: dotted white;
+    border-width: 1px;
+    margin-bottom: 10px;
   }
   .footer__redesSociales {
+    text-align: center;
     margin: 1rem auto 1rem auto;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 0px;
   }
 }
 

@@ -1,15 +1,16 @@
 
 footer {
 	border-top: 1px solid;
-	box-shadow: $sombreado;
+	box-shadow: 0px 0px 40px 0px;
 	padding-bottom: 30px;
-	background-color:$colorprimario;
+	background-color:black;
 	width: 100%;
 	margin-top: 100px;
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
 	align-items:baseline;
+	
 	
 }
 
@@ -18,14 +19,23 @@ footer {
 .footer__contacto {
  	margin-top: 2rem;
 	 h3{
-		 color: black;
+		font-size: 2rem;
+		color: white;
 	 }
+	 h4{
+		color: white;
+	}
+
 }
 
 .footer__horarios{
 	
 		h3{
-			color: black;
+			font-size: 2rem;
+			color: white;
+		}
+		h4{
+			color: white;
 		}
 }
 
@@ -35,7 +45,11 @@ footer {
 	padding-right: 2rem;
 	font-size: 3rem;
 	h3{
-		color: black;
+		font-size: 2rem;
+		color: white;
+	}
+	h4{
+		color: white;
 	}
 
 }
@@ -52,10 +66,10 @@ footer {
 
 
 $redesSociales: (
-	instagram: #222121,
-facebook:  #222121,
-youtube: #222121,
-whastapp: #222121
+	instagram: #ffffff,
+facebook:  #ffffff,
+youtube: #ffffff,
+whastapp: #ffffff
 
 // instagram: rgb(241, 30, 189),
 // facebook: rgb(69, 30, 241),
@@ -78,7 +92,7 @@ whastapp: #222121
 @media (max-width:768px) {
 
 footer{
-
+padding-bottom: 0px;
 	flex-direction:column;
 align-items: center;
 align-content: space-around;
@@ -87,17 +101,27 @@ align-content: space-around;
 
 
 .footer__contacto {
+	text-align: center;
 	margin: 1rem auto 1rem auto;
+	border-bottom: dotted white;
+	border-width: 1px;
+	margin-bottom: 10px;
+	
 }
 .footer__horarios {
+	text-align: center;
 	margin: 1rem auto 1rem auto;
+	border-bottom: dotted white;
+	border-width: 1px;
+	margin-bottom: 10px;
 }
 
 .footer__redesSociales {
 	
-	
+	text-align: center;
 	margin: 1rem auto 1rem auto;
-	font-size: 3rem;
+	font-size: 2.5rem;
+	padding: 0px;
 
 }
 
