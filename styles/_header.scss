@@ -180,7 +180,11 @@ header {
 
 @media (max-width:550px) {
 
-	
+	ul{
+
+		padding: 0px;
+	}
+
 	.menuSuperior__menu {
 		
 		display: flex;
@@ -188,6 +192,7 @@ header {
 		flex-direction: row;
 		justify-content: space-around;
 		z-index: 1;
+		
 		
 		ul{
 			border: black;
@@ -208,25 +213,34 @@ header {
 					animation: none;
 				}
 				.navegador__itemsDeMenu {
+
+					height: 100vh;
+					padding-top: 1rem;
 					animation: fadeInRight;
 					animation-duration: 2s;
 					display: flex;
-					align-items: flex-start;
+					justify-content: flex-start;
+					align-items: start;
 					margin-top: 2.5rem;
 					flex-direction: column;
 					position: absolute;
 					background-color: $colorprimario;
+				
 				}
 			}
 		}
 		
 	}
 	.itemsDeMenu__link {
+		
+		margin-bottom: 1rem;
 		animation: none;
+		
 		&:hover {
 			.sub-menu-carta {
 				display: none;
 			}
 		}
+		
 	}
 }

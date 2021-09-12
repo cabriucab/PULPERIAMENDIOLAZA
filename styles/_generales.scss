@@ -42,15 +42,18 @@ font-size: 3rem;
 }
 
 .social-bar {
-	font-size: 16px;
-	position: fixed;
-	right: 0;
-	top: 35%;
-	font-size: 1.5rem;
+	// font-size: 16px;
+	// position: fixed;
+	// right: 0;
+	// top: 35%;
+	// font-size: 1.5rem;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: flex-end;
+	// z-index: 100;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	z-index: 100;
+	flex-direction: row;
+	
 }
 
 .icon {
@@ -59,40 +62,69 @@ font-size: 3rem;
 	padding: .7rem;
 	display: flex;
 	transition: all .5s;
+	
 }
 
 .icon-facebook {
-	background: #2E406E;
+	border-radius: 20px;
+	background: #1877f2;
 }
 
 .icon-twitter {
-	background: #339DC5;
+	border-radius: 20px;
+	margin-left: 1rem;
+	background: #1da1f2;
 }
 
 .icon-youtube {
-	background: #E83028;
+	border-radius: 20px;
+	margin-left: 1rem;
+	background: #ff0000;
 }
 
 .icon-instagram {
-	background: #8a3ab9;
+	border-radius: 20px;
+	margin-left: 1rem;
+	background: #e1306c;
 }
 
 
-
-.icon:first-child {
-	border-radius: 1rem 0 0 0;
-}
-
-.icon:last-child {
-	border-radius: 0 0 0 1rem;
-}
 
 .icon:hover {
-	padding-right: 3rem;
-	border-radius: 1rem 0 0 1rem;
-	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+
+	box-shadow: 0 0 .2rem white;
 }
 
+.btn-whatsapp {
+	display:block;
+	width:70px;
+	height:70px;	
+	position: fixed;
+	right:20px;
+	bottom:20px;
+	border-radius:50%;
+	line-height:80px;
+	text-align:center;
+	z-index:999;
+img{
+
+width: 100%;
+}
+
+}
+
+ @media (max-width:768px) {
+	.btn-whatsapp {
+		width:50px;
+	height:50px;	
+		position: fixed;
+		right:20px;
+		bottom:20px;
+
+	}
+
+
+}
 
 .copyright{
 text-align: center;

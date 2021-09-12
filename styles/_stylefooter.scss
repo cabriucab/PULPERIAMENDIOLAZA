@@ -1,7 +1,7 @@
 
 footer {
 	border-top: 1px solid;
-	box-shadow: 0px 0px 40px 0px;
+	box-shadow: 0px 0px 10px 0px;
 	padding-bottom: 30px;
 	background-color:black;
 	width: 100%;
@@ -10,6 +10,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items:baseline;
+	margin-bottom: 1rem;
 	
 	
 }
@@ -20,9 +21,10 @@ footer {
  	margin-top: 2rem;
 	 h3{
 		font-size: 2rem;
-		color: white;
+		color: rgb(228, 193, 80);
 	 }
 	 h4{
+		font-size: 1.5rem;
 		color: white;
 	}
 
@@ -32,9 +34,10 @@ footer {
 	
 		h3{
 			font-size: 2rem;
-			color: white;
+			color: rgb(228, 193, 80);
 		}
 		h4{
+			font-size: 1.5rem;
 			color: white;
 		}
 }
@@ -46,7 +49,7 @@ footer {
 	font-size: 3rem;
 	h3{
 		font-size: 2rem;
-		color: white;
+		color: rgb(228, 193, 80);
 	}
 	h4{
 		color: white;
@@ -66,15 +69,15 @@ footer {
 
 
 $redesSociales: (
-	instagram: #ffffff,
-facebook:  #ffffff,
-youtube: #ffffff,
-whastapp: #ffffff
+// 	instagram: #ffffff,
+// facebook:  #ffffff,
+// youtube: #ffffff,
+// whastapp: #4aae20
 
-// instagram: rgb(241, 30, 189),
-// facebook: rgb(69, 30, 241),
-// youtube:rgb(241, 18, 18),
-// whastapp:rgb(5, 168, 32)
+instagram: rgb(241, 30, 189),
+facebook: rgb(69, 30, 241), 
+youtube:rgb(241, 18, 18),
+ whastapp:rgb(10, 148, 33)
 );
 
 @each $red, $color in $redesSociales{
@@ -93,7 +96,7 @@ whastapp: #ffffff
 
 footer{
 padding-bottom: 0px;
-	flex-direction:column;
+flex-direction:column;
 align-items: center;
 align-content: space-around;
 
@@ -101,30 +104,26 @@ align-content: space-around;
 
 
 .footer__contacto {
+	
 	text-align: center;
 	margin: 1rem auto 1rem auto;
-	border-bottom: dotted white;
-	border-width: 1px;
 	margin-bottom: 10px;
+	text-decoration: none;
+
 	
 }
 .footer__horarios {
 	text-align: center;
 	margin: 1rem auto 1rem auto;
-	border-bottom: dotted white;
-	border-width: 1px;
 	margin-bottom: 10px;
-}
 
-.footer__redesSociales {
 	
-	text-align: center;
-	margin: 1rem auto 1rem auto;
-	font-size: 2.5rem;
-	padding: 0px;
-
 }
+.social-bar{
 
+	display: flex;
+	padding-bottom: 2rem;
+}
 
 
 

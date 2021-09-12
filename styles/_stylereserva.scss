@@ -1,21 +1,98 @@
+
+.container{
+
+	margin-top: 5rem;
+}
+
+.reservas{
+
+align-items: flex-end;
+
+}
+.tituloReserva{
+	color: wheat;
+text-align: center;
+margin-bottom: 3rem;
+}
+
 .formularioContacto {
-	border: 1px solid;
+
+	background-image: url(../img/106703453_3124802914264463_842023457542090694_n.jpg);
+	background-size: cover;
 	box-shadow: 0px 0px 20px 0px;
 	border-radius: 1.5rem;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 2rem;
+	
+
 }
+.renglon{
+margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.form-label{
+padding-left: 2rem;
+font-size: 1.5rem;
+width: 50%; 
+color: wheat;
+text-align: left;
+}
+
+.form-control, .form-select {
+	
+padding-right: 2rem;
+box-shadow: 0 0 10px 0;
+width: 55%; 
+margin: 0 auto!important;
+
+}
+.botones{
+	display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+
+
+input{
+	font-size: 2rem;
+margin-top: 3rem;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0;
+	margin-bottom: 1rem;
+
+}
+}
+
+
 .datosDeContacto {
-	height: 100%;
+	
 	text-align: center;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 2rem;
+	font-size: 1.3rem;
 }
 .mapa {
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 .iconoWhastapp {
 	img {
 		width: 4rem;
+	}
+}
+
+@media (max-width:768px) {
+
+	.reservas{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.formularioContacto {
+		align-items: center;
+	width: 98%;
+	margin-bottom: 3rem;
 	}
 }
