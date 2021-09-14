@@ -5,14 +5,14 @@
 }
 
 .reservas{
-
+margin: 4rem 2rem;
 align-items: flex-end;
 
 }
 .tituloReserva{
 	color: wheat;
 text-align: center;
-margin-bottom: 3rem;
+margin-bottom: 4rem;
 }
 
 .formularioContacto {
@@ -35,22 +35,22 @@ margin-top: 2rem;
 
 .form-label{
 padding-left: 2rem;
-font-size: 1.5rem;
+font-size: 2.5rem;
 width: 50%; 
 color: wheat;
 text-align: left;
 }
 
 .form-control, .form-select {
-	
-padding-right: 2rem;
+	font-size: 2rem;
+padding-right: 3rem;
 box-shadow: 0 0 10px 0;
 width: 55%; 
 margin: 0 auto!important;
 
 }
 .botones{
-	display: flex;
+display: flex;
 flex-direction: row;
 justify-content: center;
 width: 100%;
@@ -59,7 +59,7 @@ width: 100%;
 input{
 	font-size: 2rem;
 margin-top: 3rem;
-	border-radius: 10px;
+	border-radius: 15px;
 	box-shadow: 0 0 20px 0;
 	margin-bottom: 1rem;
 
@@ -71,7 +71,7 @@ margin-top: 3rem;
 	
 	text-align: center;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 1.3rem;
+	font-size: 2rem;
 }
 .mapa {
 	margin-top: 2rem;
@@ -95,4 +95,20 @@ margin-top: 3rem;
 	width: 98%;
 	margin-bottom: 3rem;
 	}
+
+	.form-label{
+		
+		font-size: 3rem;
+	
+		}
+
+
+}
+
+@media (max-width:550px) {
+	.form-label{
+		
+		font-size: 2rem;
+	
+		}
 }

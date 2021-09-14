@@ -123,6 +123,11 @@ align-content: space-around;
 
 	display: flex;
 	padding-bottom: 2rem;
+	&:hover{
+animation: aparecer 1s;
+
+
+	}
 }
 
 
