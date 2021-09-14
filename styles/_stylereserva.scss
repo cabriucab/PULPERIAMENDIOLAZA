@@ -13,6 +13,7 @@ align-items: flex-end;
 	color: wheat;
 text-align: center;
 margin-bottom: 4rem;
+
 }
 
 .formularioContacto {
@@ -99,13 +100,29 @@ margin-top: 3rem;
 	.form-label{
 		
 		font-size: 3rem;
+		color: white;
 	
+		}
+
+		#seleccion{
+
+			height: 50%;
 		}
 
 
 }
 
 @media (max-width:550px) {
+	
+	.tituloReserva{
+		color: wheat;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 4rem;
+	text-shadow:  black 1px 0 10px;
+	
+	}
+	
 	.form-label{
 		
 		font-size: 2rem;

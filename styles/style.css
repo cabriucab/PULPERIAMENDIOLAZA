@@ -79,7 +79,7 @@ h2 {
   height: 70px;
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 4rem;
   border-radius: 50%;
   line-height: 80px;
   text-align: center;
@@ -496,7 +496,7 @@ header {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    z-index: 1;
+    z-index: 1000000000;
   }
   .menuSuperior__menu ul {
     border: black;
@@ -560,6 +560,7 @@ header {
   letter-spacing: 3px;
   text-align: center;
   color: black;
+  text-shadow: black 1px 0 10px;
 }
 
 .fotosConDescripcion {
@@ -611,6 +612,7 @@ header {
   margin-right: 1rem;
   padding: 2rem 2rem;
   border-radius: 20px 0px 20px 0px;
+  color: #e4c150;
 }
 
 .carnes {
@@ -619,6 +621,7 @@ header {
   margin-right: 1rem;
   padding: 2rem 2rem;
   border-radius: 20px 0px 20px 0px;
+  color: #e4c150;
 }
 
 .pizzas {
@@ -627,6 +630,7 @@ header {
   margin-right: 1rem;
   padding: 2rem 2rem;
   border-radius: 20px 0px 20px 0px;
+  color: #e4c150;
 }
 
 .pescados {
@@ -635,6 +639,7 @@ header {
   margin-right: 1rem;
   padding: 2rem 2rem;
   border-radius: 20px 0px 20px 0px;
+  color: #e4c150;
 }
 
 .descripcion {
@@ -683,7 +688,6 @@ header {
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
 }
 
 svg {
@@ -692,6 +696,7 @@ svg {
 }
 
 .slider-container {
+  overflow: hidden;
   position: relative;
   height: 75%;
   -webkit-user-select: none;
@@ -853,6 +858,7 @@ svg {
 .slide:nth-child(1) .slide__bg {
   left: 0;
   background-image: url("../img/local.jpg");
+  background-size: cover;
 }
 
 .slide:nth-child(1) .slide__overlay-path {
@@ -872,6 +878,7 @@ svg {
 .slide:nth-child(2) .slide__bg {
   left: -50%;
   background-image: url("../img/local1.jpg");
+  background-size: cover;
 }
 
 .slide:nth-child(2) .slide__overlay-path {
@@ -891,6 +898,7 @@ svg {
 .slide:nth-child(3) .slide__bg {
   left: -100%;
   background-image: url("../img/local2.jpg");
+  background-size: cover;
 }
 
 .slide:nth-child(3) .slide__overlay-path {
@@ -910,6 +918,7 @@ svg {
 .slide:nth-child(4) .slide__bg {
   left: -150%;
   background-image: url("../img/local3.jpg");
+  background-size: cover;
 }
 
 .slide:nth-child(4) .slide__overlay-path {
@@ -1089,6 +1098,9 @@ svg {
 }
 
 @media (max-width: 550px) {
+  .sugerenciaSemanal {
+    font-size: 4rem;
+  }
   .tituloSlides {
     font-size: 2rem;
   }
@@ -1120,7 +1132,7 @@ svg {
   padding: 3rem 0 3rem 0;
 }
 
-.container {
+.containers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1315,9 +1327,10 @@ svg {
 
 .tituloQuienesSomos {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
   color: white;
+  text-shadow: black 1px 0 10px;
 }
 
 .tituloQuienesSomos h2 {
@@ -1548,6 +1561,7 @@ svg {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 7rem;
   text-align: center;
+  text-shadow: black 1px 0 20px;
   color: white;
 }
 
@@ -1724,10 +1738,21 @@ svg {
   }
   .form-label {
     font-size: 3rem;
+    color: white;
+  }
+  #seleccion {
+    height: 50%;
   }
 }
 
 @media (max-width: 550px) {
+  .tituloReserva {
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-shadow: black 1px 0 10px;
+  }
   .form-label {
     font-size: 2rem;
   }
