@@ -103,9 +103,8 @@ h2 {
 @media (max-width: 550px) {
   .btn-whatsapp {
     width: 15%;
-    position: fixed;
-    right: 20px;
-    bottom: 30px;
+    right: 1.5rem;
+    bottom: 5rem;
   }
 }
 
@@ -1885,8 +1884,13 @@ footer {
 }
 
 .nuestrasCreaciones {
-  margin-top: 3rem;
+  font-size: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  letter-spacing: 3px;
   text-align: center;
+  color: black;
+  text-shadow: black 1px 0 10px;
 }
 
 .paginacion {
