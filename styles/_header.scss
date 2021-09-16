@@ -72,6 +72,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	
 }
 .navegador__itemsDeMenu {
 	list-style: none;
@@ -179,6 +180,13 @@ header {
 
 
 @media (max-width:550px) {
+	.menu__navegador{
+		.imagenHamburguesa{
+			width: 4rem;
+		}
+
+	}
+	
 
 	ul{
 
