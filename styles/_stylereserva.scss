@@ -41,6 +41,17 @@ width: 50%;
 color: wheat;
 text-align: left;
 }
+.btn-success{
+
+background-color: white;
+color: black;
+&:hover{
+
+	background-color: black;
+	color: white;
+}
+
+}
 
 .form-control, .form-select {
 	font-size: 2rem;
@@ -89,10 +100,12 @@ margin-top: 3rem;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding: 0;
+		margin: 4rem 0rem;
 	}
 
 	.formularioContacto {
-		align-items: center;
+	align-items: center;
 	width: 98%;
 	margin-bottom: 3rem;
 	}

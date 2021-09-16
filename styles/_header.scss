@@ -180,6 +180,19 @@ header {
 
 
 @media (max-width:550px) {
+	
+	.menu__logo {
+
+		width: 45%;
+		.img{
+
+			width: 100%;
+			
+
+		}
+		
+	}
+
 	.menu__navegador{
 		.imagenHamburguesa{
 			width: 4rem;
@@ -229,7 +242,7 @@ header {
 					display: flex;
 					justify-content: flex-start;
 					align-items: start;
-					margin-top: 2.5rem;
+					margin-top: 3.5rem;
 					flex-direction: column;
 					position: absolute;
 					background-color: $colorprimario;

@@ -29,50 +29,6 @@ h2 {
   font-size: 3rem;
 }
 
-.social-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.icon {
-  color: white;
-  text-decoration: none;
-  padding: .7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.icon-facebook {
-  border-radius: 20px;
-  background: #1877f2;
-}
-
-.icon-twitter {
-  border-radius: 20px;
-  margin-left: 1rem;
-  background: #1da1f2;
-}
-
-.icon-youtube {
-  border-radius: 20px;
-  margin-left: 1rem;
-  background: #ff0000;
-}
-
-.icon-instagram {
-  border-radius: 20px;
-  margin-left: 1rem;
-  background: #e1306c;
-}
-
 .btn-whatsapp {
   display: block;
   width: 70px;
@@ -480,6 +436,12 @@ header {
 }
 
 @media (max-width: 550px) {
+  .menu__logo {
+    width: 45%;
+  }
+  .menu__logo .img {
+    width: 100%;
+  }
   .menu__navegador .imagenHamburguesa {
     width: 4rem;
   }
@@ -533,7 +495,7 @@ header {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1348,10 +1310,11 @@ svg {
   margin: 10rem 2rem 0rem 2rem;
 }
 
-.quienesSomos img {
+.quienesSomos .ImagenQuienesSomos {
   border-radius: 15px;
   -webkit-box-shadow: 0rem 0rem 2rem 0rem;
           box-shadow: 0rem 0rem 2rem 0rem;
+  width: 50rem;
 }
 
 .quienesSomos__sector1 {
@@ -1413,25 +1376,31 @@ svg {
 
 .texto1 {
   padding-right: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .texto2 {
   padding-right: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .texto3 {
   padding-right: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .imagen1 {
+  width: 100%;
   margin: 0rem, 1rem, 0rem, 1rem;
 }
 
 .imagen2 {
+  width: 100%;
   margin: 0rem, 1rem, 0rem, 1rem;
 }
 
 .imagen3 {
+  width: 100%;
   margin: 0rem, 1rem, 0rem, 1rem;
 }
 
@@ -1442,15 +1411,11 @@ svg {
           flex-direction: row-reverse;
 }
 
-.texto2 {
-  padding-left: 2.5rem;
-}
-
 @media (max-width: 950px) {
   .quienesSomos {
     font-size: 2rem;
   }
-  .img {
+  .ImagenQuienesSomos {
     width: auto;
   }
 }
@@ -1537,7 +1502,19 @@ svg {
 }
 
 @media (max-width: 550px) {
-  .quienesSomos img {
+  .texto1 {
+    font-size: 2.5rem;
+    padding: 0rem;
+  }
+  .texto2 {
+    font-size: 2.5rem;
+    padding: 0rem;
+  }
+  .texto3 {
+    font-size: 2.5rem;
+    padding: 0rem;
+  }
+  .quienesSomos .ImagenQuienesSomos {
     width: 100%;
   }
 }
@@ -1672,6 +1649,16 @@ svg {
   text-align: left;
 }
 
+.btn-success {
+  background-color: white;
+  color: black;
+}
+
+.btn-success:hover {
+  background-color: black;
+  color: white;
+}
+
 .form-control, .form-select {
   font-size: 2rem;
   padding-right: 3rem;
@@ -1730,6 +1717,8 @@ svg {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
+    margin: 4rem 0rem;
   }
   .formularioContacto {
     -webkit-box-align: center;
@@ -1874,16 +1863,66 @@ footer {
     margin: 1rem auto 1rem auto;
     margin-bottom: 10px;
   }
-  .social-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 2rem;
-  }
-  .social-bar:hover {
-    -webkit-animation: aparecer 1s;
-            animation: aparecer 1s;
-  }
+}
+
+.social-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.icon-facebook {
+  border-radius: 20px;
+}
+
+.icon-facebook:hover {
+  color: white;
+  background: #1877f2;
+}
+
+.icon-twitter {
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+.icon-twitter:hover {
+  color: white;
+  background: #1da1f2;
+}
+
+.icon-youtube {
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+.icon-youtube:hover {
+  color: white;
+  background: #ff0000;
+}
+
+.icon-instagram {
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+.icon-instagram:hover {
+  background: #e1306c;
+  color: white;
 }
 
 .nuestrasCreaciones {

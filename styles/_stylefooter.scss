@@ -119,17 +119,70 @@ align-content: space-around;
 
 	
 }
-.social-bar{
 
+	
+}
+
+.social-bar {
+	
 	display: flex;
-	padding-bottom: 2rem;
+	flex-direction: row;
+	
+	
+	
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+
+	
+}
+
+.icon-facebook {
+	border-radius: 20px;
+	
 	&:hover{
-animation: aparecer 1s;
+		color:white;
+		background: #1877f2;
 
+	}
 
+}
+
+.icon-twitter {
+	border-radius: 20px;
+	margin-left: 1rem;
+	
+	&:hover{
+		color:white;
+		background: #1da1f2;
+	}
+}
+
+.icon-youtube {
+	border-radius: 20px;
+	margin-left: 1rem;
+	
+	&:hover{
+		color:white;
+		background: #ff0000;
+	}
+}
+
+.icon-instagram {
+	border-radius: 20px;
+	margin-left: 1rem;
+	
+	&:hover{
+		background: #e1306c;
+		color:white;
+		
 	}
 }
 
 
 
-}
